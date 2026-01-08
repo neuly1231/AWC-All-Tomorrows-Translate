@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>나의 번역서 뷰어</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 상단 고정 바 -->
+    <header id="top-bar">
+        <h1 id="top-bar-title">목차를 선택하세요</h1>
+    </header>
+
+    <!-- 메인 컨텐츠 영역 -->
+    <main>
+        <!-- 1. 표지와 목차 (Cover & TOC) -->
+        <section id="cover-section">
+            <div class="cover-image-box">
+                <img id="cover-img" src="" alt="표지 이미지">
+            </div>
+            <h1 id="book-title-main"></h1>
+            <p id="book-author"></p>
+            
+            <hr class="divider">
+            
+            <nav id="toc-container">
+                <h3>목차</h3>
+                <ul id="toc-list">
+                    <!-- 자바스크립트가 여기에 목록을 만듭니다 -->
+                </ul>
+            </nav>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- 2. 본문 내용 (Book Content) -->
+        <section id="book-content">
+            <!-- 자바스크립트가 여기에 본문을 채웁니다 -->
+        </section>
+    </main>
+
+    <!-- 모달, 토스트 등 기존 요소 유지 -->
+    <div id="modal-overlay" class="hidden">
+        <div class="modal-box">
+            <h3 id="modal-title"></h3>
+            <div id="modal-text"></div>
+            <button id="btn-close-modal">닫기</button>
+        </div>
+    </div>
+    <div id="toast" class="hidden">알림 내용</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
